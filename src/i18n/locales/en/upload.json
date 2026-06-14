@@ -1,0 +1,21 @@
+{
+  "title": "Upload Sales Data",
+  "subtitle": "Upload your store's sales data to start analysis and forecasting",
+  "dragDrop": "Drop your file here or click to browse",
+  "supportedFormats": "CSV, XLSX, and XLS formats supported",
+  "processing": "Processing your data...",
+  "uploadSuccess": "Upload Successful!",
+  "uploadError": "Upload Failed",
+  "redirecting": "Redirecting to dashboard...",
+  "clickToRetry": "Click to retry",
+  "expectedFormat": "Required Data Format",
+  "quickStart": "Quick Start",
+  "quickStartDesc": "No data ready? We have sample data so you can explore all features",
+  "loadDemo": "Load Demo Data",
+  "downloadSample": "Download Sample CSV",
+  "tips": "Tips",
+  "tip1": "Export data from your POS system as CSV",
+  "tip2": "Include at least 30 days of sales history",
+  "tip3": "More data = better predictions",
+  "tip4": "Date format: YYYY-MM-DD"
+}

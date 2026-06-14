@@ -1,0 +1,251 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light mode (default) - White background */
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 160 84% 39%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222 47% 11%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 160 84% 39%;
+    --radius: 0.625rem;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 160 84% 39%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 160 84% 39%;
+  }
+
+  /* Dark mode - Deep black and neutral colors */
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 160 84% 39%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 90%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 0%;
+    --border: 0 0% 15%;
+    --input: 0 0% 12%;
+    --ring: 160 84% 39%;
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 160 84% 39%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 20%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 160 84% 39%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    background-color: #ffffff;
+    font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'Noto Sans Arabic', 'Noto Sans Kurdish', sans-serif;
+  }
+
+  .dark body {
+    background-color: #000000;
+  }
+
+  html[dir="rtl"] body {
+    font-family: 'Noto Sans Arabic', 'Noto Sans Kurdish', 'Segoe UI', 'Tahoma', sans-serif;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #404040;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #505050;
+}
+
+/* Selection */
+::selection {
+  background-color: rgba(16, 185, 129, 0.2);
+  color: #0f172a;
+}
+
+/* Focus visible for accessibility */
+:focus-visible {
+  outline: 2px solid hsl(var(--primary));
+  outline-offset: 2px;
+}
+
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: hsl(var(--primary));
+  color: white;
+  padding: 8px 16px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* RTL specific utilities */
+html[dir="rtl"] .rtl-flip {
+  transform: scaleX(-1);
+}
+
+/* Animation for loading skeleton */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(90deg, #e2e8f0 25%, #cbd5e1 50%, #e2e8f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* ============================================================================
+   DARK MODE (when <html class="dark"> is applied) - Black/Dark background
+   ============================================================================ */
+
+.dark {
+  --background: 222 47% 6%;
+  --foreground: 210 40% 98%;
+  --card: 222 47% 8%;
+  --card-foreground: 210 40% 98%;
+  --popover: 222 47% 8%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 160 84% 39%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 217 33% 20%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217 33% 20%;
+  --muted-foreground: 215 20% 65%;
+  --accent: 217 33% 20%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 217 33% 20%;
+  --input: 217 33% 20%;
+  --ring: 160 84% 39%;
+  --sidebar-background: 222 47% 8%;
+  --sidebar-foreground: 210 40% 98%;
+  --sidebar-primary: 160 84% 39%;
+  --sidebar-primary-foreground: 210 40% 98%;
+  --sidebar-accent: 217 33% 20%;
+  --sidebar-accent-foreground: 210 40% 98%;
+  --sidebar-border: 217 33% 20%;
+  --sidebar-ring: 160 84% 39%;
+}
+
+.dark body {
+  background-color: #0a0f1a;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #1e293b;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+.dark ::selection {
+  background-color: rgba(16, 185, 129, 0.3);
+  color: #ffffff;
+}
+
+/* Dark mode card backgrounds */
+.dark .bg-white {
+  background-color: #1e293b;
+}
+
+.dark .bg-slate-50,
+.dark .bg-slate-100 {
+  background-color: #0f172a;
+}
+
+/* Dark mode border colors */
+.dark .border-slate-200,
+.dark .border-slate-300 {
+  border-color: #1e293b;
+}
+
+/* Dark mode text colors */
+.dark .text-slate-600,
+.dark .text-slate-700 {
+  color: #94a3b8;
+}
+
+.dark .text-slate-900 {
+  color: #f1f5f9;
+}

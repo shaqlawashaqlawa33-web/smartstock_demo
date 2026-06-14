@@ -1,0 +1,16 @@
+{
+  "title": "لوحة التحكم",
+  "subtitle": "نظرة عامة على إدارة متجرك",
+  "totalRevenue": "إجمالي الإيرادات",
+  "totalOrders": "إجمالي الطلبات",
+  "avgOrderValue": "متوسط قيمة الطلب",
+  "uniqueProducts": "المنتجات الفريدة",
+  "revenueTrend": "اتجاه الإيرادات (آخر 30 يوماً)",
+  "salesByCategory": "المبيعات حسب الفئة",
+  "topProducts": "أفضل 10 منتجات حسب الإيرادات",
+  "dailyOrders": "الطلبات اليومية",
+  "source": "مصدر البيانات: {{fileName}}",
+  "sampleData": "تم تحميل بيانات تجريبية",
+  "growth": "نمو",
+  "decline": "انخفاض"
+}

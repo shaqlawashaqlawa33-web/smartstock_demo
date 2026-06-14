@@ -1,0 +1,14 @@
+{
+  "dashboard": "Dashboard",
+  "salesAnalysis": "Sales Analysis",
+  "forecasting": "Forecasting",
+  "inventory": "Inventory",
+  "settings": "Settings",
+  "uploadData": "Upload Data",
+  "mainMenu": "Main Menu",
+  "dataStatus": "Data Status",
+  "dataAvailable": "Data Loaded",
+  "noData": "No Data",
+  "menu": "Menu",
+  "home": "Home"
+}

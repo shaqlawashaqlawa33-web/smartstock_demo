@@ -1,0 +1,14 @@
+{
+  "dashboard": "لوحة التحكم",
+  "salesAnalysis": "تحليل المبيعات",
+  "forecasting": "التوقعات",
+  "inventory": "المخزون",
+  "settings": "الإعدادات",
+  "uploadData": "رفع البيانات",
+  "mainMenu": "القائمة الرئيسية",
+  "dataStatus": "حالة البيانات",
+  "dataAvailable": "البيانات محملة",
+  "noData": "لا توجد بيانات",
+  "menu": "القائمة",
+  "home": "الرئيسية"
+}

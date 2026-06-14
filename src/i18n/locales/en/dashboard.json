@@ -1,0 +1,16 @@
+{
+  "title": "Dashboard",
+  "subtitle": "Executive overview of your store performance",
+  "totalRevenue": "Total Revenue",
+  "totalOrders": "Total Orders",
+  "avgOrderValue": "Avg. Order Value",
+  "uniqueProducts": "Unique Products",
+  "revenueTrend": "Revenue Trend (Last 30 Days)",
+  "salesByCategory": "Sales by Category",
+  "topProducts": "Top 10 Products by Revenue",
+  "dailyOrders": "Daily Order Count",
+  "source": "Data source: {{fileName}}",
+  "sampleData": "Sample data loaded",
+  "growth": "Growth",
+  "decline": "Decline"
+}
