@@ -24,6 +24,7 @@ import ckbSales from './locales/ckb/sales.json';
 import ckbForecast from './locales/ckb/forecast.json';
 import ckbInventory from './locales/ckb/inventory.json';
 import ckbSettings from './locales/ckb/settings.json';
+import ckbLanding from './locales/ckb/landing.json';
 
 import arCommon from './locales/ar/common.json';
 import arDashboard from './locales/ar/dashboard.json';
@@ -33,6 +34,7 @@ import arSales from './locales/ar/sales.json';
 import arForecast from './locales/ar/forecast.json';
 import arInventory from './locales/ar/inventory.json';
 import arSettings from './locales/ar/settings.json';
+import arLanding from './locales/ar/landing.json';
 
 import enCommon from './locales/en/common.json';
 import enDashboard from './locales/en/dashboard.json';
@@ -42,6 +44,7 @@ import enSales from './locales/en/sales.json';
 import enForecast from './locales/en/forecast.json';
 import enInventory from './locales/en/inventory.json';
 import enSettings from './locales/en/settings.json';
+import enLanding from './locales/en/landing.json';
 
 /** Map of supported languages to their RTL status */
 export const RTL_LANGUAGES: Record<Language, boolean> = {
@@ -91,6 +94,7 @@ export function initializeI18n(): typeof i18n {
           forecast: ckbForecast,
           inventory: ckbInventory,
           settings: ckbSettings,
+          landing: ckbLanding,
         },
         ar: {
           common: arCommon,
@@ -101,6 +105,7 @@ export function initializeI18n(): typeof i18n {
           forecast: arForecast,
           inventory: arInventory,
           settings: arSettings,
+          landing: arLanding,
         },
         en: {
           common: enCommon,
@@ -111,11 +116,12 @@ export function initializeI18n(): typeof i18n {
           forecast: enForecast,
           inventory: enInventory,
           settings: enSettings,
+          landing: enLanding,
         },
       },
       fallbackLng: DEFAULT_LANGUAGE,
       defaultNS: 'common',
-      ns: ['common', 'dashboard', 'navigation', 'upload', 'sales', 'forecast', 'inventory', 'settings'],
+      ns: ['common', 'dashboard', 'navigation', 'upload', 'sales', 'forecast', 'inventory', 'settings', 'landing'],
       interpolation: {
         escapeValue: false, // React already escapes
       },

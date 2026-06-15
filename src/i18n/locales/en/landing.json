@@ -1,0 +1,23 @@
+{
+  "heroTitle": "Smarter Inventory, Better Decisions",
+  "heroDescription": "AI-powered sales forecasting and inventory management built for supermarkets and pharmacies in Kurdistan.",
+  "tryDemo": "Try Demo",
+  "uploadData": "Upload Data",
+  "demoDashboard": "Demo Dashboard",
+  "benefit1": "Fast Setup",
+  "benefit2": "Secure & Private",
+  "benefit3": "AI-Powered Insights",
+  "featuresTitle": "Everything You Need to Manage Your Stock",
+  "featuresSubtitle": "Powerful tools to track sales, forecast demand, and optimize inventory.",
+  "howItWorks": "How It Works",
+  "howItWorksDesc": "Get started in three simple steps.",
+  "step1Title": "Upload Your Data",
+  "step1Desc": "Import your sales records as a CSV or Excel file.",
+  "step2Title": "Get Instant Analytics",
+  "step2Desc": "View dashboards, trends, and product performance automatically.",
+  "step3Title": "Forecast & Optimize",
+  "step3Desc": "Use AI-driven forecasts to plan inventory and avoid stockouts.",
+  "ctaTitle": "Ready to Take Control of Your Inventory?",
+  "ctaDescription": "Try the demo dashboard now, no signup required.",
+  "footerText": "Built for retailers in Kurdistan."
+}
